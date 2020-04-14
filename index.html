@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Product Survey Form</title>
 </head>
 <body>
+    <header>
+        <h1 id="title">Product Survey Form</h1>
+        <p id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ducimus exercitationem nihil sed delectus sequi!</p>
+    </header>
+    <section>
+        <form action="#" id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="number" id="number-label">How many times have you used or product?</label>
+            <input type="number" name="number" id="number" min="0" max="25">
+            <label for="dropdown">What would you say about our product?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="Reliable">Reliable</option>
+                <option value="User-friendly">User-friendly</option>
+                <option value="Intuitive">Intuitive</option>
+                <option value="Maintainable">Maintainable</option>
+            </select>
+            <label for="satisfaction">How satisfied are you?</label>
+            <input type="radio" name="satisfaction" id="very" value="very">
+            <label for="very">Very satisfied</label>
+            <input type="radio" name="satisfaction" id="satisfied" value="satisfied">
+            <label for="satisfied">Satisfied</label>
+            <input type="radio" name="satisfaction" id="notsat" value="notsat">
+            <label for="notsat">Not satisfied</label>
+            <input type="radio" name="satisfaction" id="disap" value="disap">
+            <label for="disap">Disappointed</label>
+            <label for="opinion">Tell us something about your shopping experiences to buy our product:</label>
+            <input type="text" name="opinion">
+            <input type="submit" value="Submit">
+        </form>
+    </section>
     
 </body>
 </html>
