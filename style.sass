@@ -22,13 +22,34 @@ html
         section
             grid-column: 2/3
             //background-color: #d4d4d4
-            input, label,
+            input, label, textarea
                 display: block
                 margin: 1em auto
                 font-size: 1.2rem
+
+            input
+                padding: 0.2em
+                border-style: none
+                outline: none
+                box-shadow: none
+                border-bottom: 1px solid #009be2
+                transition: 500ms
+
+            input:focus 
+                border: 3px solid #555
+
             label
                 font-weight: bold
 
+            table
+                margin: 1em auto
+                width: 100%
+                .sat-label
+                    font-weight: normal
+                th, td
+                    //border: 1px solid black
+                th
+                    text-align: center
             #name, #email
                 width: 100%
 
@@ -36,4 +57,29 @@ html
                 margin-left: 0
 
             select
-                font-size: 1.5rem                
+                font-size: 1.5rem
+
+            #quality
+                width: 100%
+                th, td
+                    //border: 1px solid black
+                    padding: 0.3em
+                input[type=checkbox], .checkbox
+                    display: block
+                    margin: auto
+                    font-weight: normal
+
+            #opinion
+                padding: 0.5em
+                width: 100%
+                overflow: auto
+                resize: vertical
+            
+            input[type=submit]
+                border: none
+                background-color: #ec6249
+                font-size: 2rem
+                font-weight: bold
+                color: white
+                letter-spacing: 0.2em
+                padding: 0.5em 2em

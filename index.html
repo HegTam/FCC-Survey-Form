@@ -1,45 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Product Survey Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1 id="title">Product Survey Form</h1>
-        <p id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ducimus exercitationem nihil sed delectus sequi!</p>
+      <h1 id="title">Product Survey Form</h1>
+      <p id="description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ducimus
+        exercitationem nihil sed delectus sequi!
+      </p>
     </header>
     <section>
-        <form action="#" id="survey-form">
-            <label for="name" id="name-label">Name</label>
-            <input type="text" name="name" id="name" required>
-            <label for="email" id="email-label">Email</label>
-            <input type="email" name="email" id="email" required>
-            <label for="number" id="number-label">How many times have you used or product?</label>
-            <input type="number" name="number" id="number" min="0" max="25">
-            <label for="dropdown">What would you say about our product?</label>
-            <select name="dropdown" id="dropdown">
-                <option value="Reliable">Reliable</option>
-                <option value="User-friendly">User-friendly</option>
-                <option value="Intuitive">Intuitive</option>
-                <option value="Maintainable">Maintainable</option>
-            </select>
-            <label for="satisfaction">How satisfied are you?</label>
-            <input type="radio" name="satisfaction" id="very" value="very">
-            <label for="very">Very satisfied</label>
-            <input type="radio" name="satisfaction" id="satisfied" value="satisfied">
-            <label for="satisfied">Satisfied</label>
-            <input type="radio" name="satisfaction" id="notsat" value="notsat">
-            <label for="notsat">Not satisfied</label>
-            <input type="radio" name="satisfaction" id="disap" value="disap">
-            <label for="disap">Disappointed</label>
-            <label for="opinion">Tell us something about your shopping experiences to buy our product:</label>
-            <input type="text" name="opinion">
-            <input type="submit" value="Submit">
-        </form>
+      <form action="#" id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="John Doe"
+          required
+        />
+        <label for="dropdown">Sex</label>
+        <select name="dropdown" id="dropdown">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="johndoe@email.com"
+          required
+        />
+        <label for="number" id="number-label"
+          >How many times have you used or product?</label
+        >
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="0"
+          max="25"
+          placeholder="0"
+        />
+
+        <table id="quality">
+          <tr>
+            <th colspan="4">
+              <label for="quality">What would you say about our product?</label>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <label for="user-friendly" class="checkbox">User-friendly</label>
+            </th>
+            <th>
+              <label for="intuitive" class="checkbox">Intuitive</label>
+            </th>
+            <th>
+              <label for="maintainable" class="checkbox">Maintainable</label>
+            </th>
+            <th>
+              <label for="reliable" class="checkbox">Reliable</label>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                name="user-friendly"
+                value="user-friendly"
+                id="quality1"
+              />
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="intuitive"
+                value="intuitive"
+                id="quality2"
+              />
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="maintainable"
+                value="maintainable"
+                id="quality3"
+              />
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="reliable"
+                value="reliable"
+                id="quality4"
+              />
+            </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <th colspan="4">
+              <label for="satisfaction">How satisfied are you?</label>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <label for="very" class="sat-label">Very satisfied</label>
+            </th>
+            <th>
+              <label for="satisfied" class="sat-label">Satisfied</label>
+            </th>
+            <th>
+              <label for="notsat" class="sat-label">Not satisfied</label>
+            </th>
+            <th>
+              <label for="disap" class="sat-label">Disappointed</label>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="satisfaction" id="very" value="very" />
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="satisfaction"
+                id="satisfied"
+                value="satisfied"
+              />
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="satisfaction"
+                id="notsat"
+                value="notsat"
+              />
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="satisfaction"
+                id="disap"
+                value="disap"
+              />
+            </td>
+          </tr>
+        </table>
+        <label for="opinion"
+          >Tell us something about your shopping experiences to buy our
+          product:</label
+        >
+        <textarea name="opinion" id="opinion" cols="30" rows="10"></textarea>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
     </section>
-    
-</body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>

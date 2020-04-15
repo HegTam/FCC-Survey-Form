@@ -35,14 +35,42 @@ html body section {
   grid-column: 2/3;
 }
 
-html body section input, html body section label {
+html body section input, html body section label, html body section textarea {
   display: block;
   margin: 1em auto;
   font-size: 1.2rem;
 }
 
+html body section input {
+  padding: 0.2em;
+  border-style: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 1px solid #009be2;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+html body section input:focus {
+  border: 3px solid #555;
+}
+
 html body section label {
   font-weight: bold;
+}
+
+html body section table {
+  margin: 1em auto;
+  width: 100%;
+}
+
+html body section table .sat-label {
+  font-weight: normal;
+}
+
+html body section table th {
+  text-align: center;
 }
 
 html body section #name, html body section #email {
@@ -55,5 +83,36 @@ html body section #number {
 
 html body section select {
   font-size: 1.5rem;
+}
+
+html body section #quality {
+  width: 100%;
+}
+
+html body section #quality th, html body section #quality td {
+  padding: 0.3em;
+}
+
+html body section #quality input[type=checkbox], html body section #quality .checkbox {
+  display: block;
+  margin: auto;
+  font-weight: normal;
+}
+
+html body section #opinion {
+  padding: 0.5em;
+  width: 100%;
+  overflow: auto;
+  resize: vertical;
+}
+
+html body section input[type=submit] {
+  border: none;
+  background-color: #ec6249;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.2em;
+  padding: 0.5em 2em;
 }
 /*# sourceMappingURL=style.css.map */
